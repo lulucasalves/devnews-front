@@ -1,5 +1,5 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import '../styles/globals.scss'
+import '../styles/globals.css'
 import redux from '../redux'
 import { Provider } from 'react-redux'
 
