@@ -1,29 +1,19 @@
 import { Base, ItemsDiv, Div } from './styles';
 import { BlogText } from '../BlogText';
 import { DefaultText } from '../DefaultText';
-import { api } from '../../../public/api/api';
 import { useState } from 'react';
-import { useEffect } from 'react';
 
 export function PostsBlog(props) {
   const [post, setPost] = useState([
     {
       active: false,
-      id: 0,
-      title: '',
-      date: '',
+      id: 1,
+      title: 'asdsad',
+      date: 'sadsadas',
     },
   ]);
 
   const [value, setValue] = useState([]);
-
-  useEffect(() => {
-    async function loadPosts() {
-      await api.get('').then((res) => setValue(res.data));
-    }
-
-    loadPosts();
-  }, []);
 
   function separateStyles(val) {
     if (val == value.length) {

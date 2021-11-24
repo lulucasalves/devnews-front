@@ -1,5 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
-import '../styles/globals.css'
+import { createGlobalStyle } from 'styled-components';
+import { Menu } from '../components/Menu';
+import { Provider as NextGitProvider } from 'next-auth/client';
+
+import '../styles/globals.css';
 
 const GlobalStyle = createGlobalStyle`
   //Global Colors
@@ -19,15 +22,16 @@ const GlobalStyle = createGlobalStyle`
       font-size: 87.5%;
     }
   }
-`
+`;
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <NextGitProvider session={pageProps.session}>
       <GlobalStyle />
+      <Menu />
       <Component {...pageProps} />
-    </>
-  )
+    </NextGitProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
