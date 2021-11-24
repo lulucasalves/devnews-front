@@ -1,3 +1,4 @@
 export const routesDocument = {
-  initialPage: '/'
-}
+  initialPage: '/',
+  postsPage: '/posts',
+};

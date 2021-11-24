@@ -1,12 +1,11 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import '../styles/globals.css'
-import redux from '../redux'
-import { Provider } from 'react-redux'
 
 const GlobalStyle = createGlobalStyle`
   //Global Colors
   body {
-    background: #f9f9f9;
+    background: #121414;
+    font-family: 'Roboto', sans-serif;
   }
 
   //Responsive configurations
@@ -22,20 +21,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const theme = {
-  colors: {
-    primary: '#000000'
-  }
-}
-
 function MyApp({ Component, pageProps }) {
   return (
-    <Provider store={redux}>
+    <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </Provider>
+      <Component {...pageProps} />
+    </>
   )
 }
 
