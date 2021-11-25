@@ -4,6 +4,7 @@ import { Logo } from '../Logo';
 import { GithubButton } from '../GithubButton';
 import { useRouter } from 'next/dist/client/router';
 import { routesDocument } from '../../routes';
+import Link from 'next/link';
 
 export function Menu(props) {
   const router = useRouter();
@@ -17,12 +18,13 @@ export function Menu(props) {
           <Div margin="0">
             <MenuText
               cursor="pointer"
-              onClick={() => router.push(routesDocument.initialPage)}
               margin="0 27px 0 0"
               active={path == routesDocument.initialPage}
+              onClick={() => router.push(routesDocument.initialPage)}
             >
               Home
             </MenuText>
+
             <MenuText
               cursor="pointer"
               active={path == routesDocument.postsPage}

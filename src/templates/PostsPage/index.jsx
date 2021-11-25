@@ -1,11 +1,11 @@
 import { Base, ItemsDiv } from './styles';
 import { PostsBlog } from '../../components/PostsBlog';
 
-export function PostsPage() {
+export function PostsPage(props) {
   return (
     <Base>
       <ItemsDiv>
-        <PostsBlog />
+        <PostsBlog content={props.content} />
       </ItemsDiv>
     </Base>
   );

@@ -7,7 +7,6 @@ import { signIn, signOut, useSession } from 'next-auth/client';
 export function GithubButton(props) {
   const [session] = useSession();
 
-  console.log(session);
 
   return (
     <Base {...props}>

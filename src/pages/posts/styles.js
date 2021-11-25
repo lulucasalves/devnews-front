@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const Base = styled.div`
-  max-width: ${(props) => (props.width ? props.width : '100%')};
-  margin: ${(props) => (props.margin ? props.margin : '0')};
-  overflow: hidden;
-`;
-
 export const ItemsDiv = styled.div`
   display: ${(props) => (props.display ? props.display : 'block')};
   max-width: ${(props) => (props.width ? props.width : '100%')};
