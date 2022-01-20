@@ -1,10 +1,9 @@
-import { Base, ItemsDiv, Div } from './styles';
-import { MenuText } from '../MenuText';
-import { Logo } from '../Logo';
-import { GithubButton } from '../GithubButton';
-import { useRouter } from 'next/dist/client/router';
-import { routesDocument } from '../../routes';
-import Link from 'next/link';
+import { Base, ItemsDiv, Div } from "./styles";
+import { MenuText } from "../MenuText";
+import { Logo } from "../Logo";
+import { GithubButton } from "../GithubButton";
+import { useRouter } from "next/dist/client/router";
+import { routesDocument } from "../../routes";
 
 export function Menu(props) {
   const router = useRouter();
@@ -27,7 +26,7 @@ export function Menu(props) {
 
             <MenuText
               cursor="pointer"
-              active={path == routesDocument.postsPage}
+              active={path != routesDocument.initialPage}
               onClick={() => router.push(routesDocument.postsPage)}
             >
               Posts
