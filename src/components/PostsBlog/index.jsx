@@ -1,8 +1,8 @@
-import { Base, ItemsDiv, Div } from './styles';
-import { BlogText } from '../BlogText';
-import { DefaultText } from '../DefaultText';
-import { useRouter } from 'next/dist/client/router';
-import { routesDocument } from '../../routes';
+import { Base, ItemsDiv, Div } from "./styles";
+import { BlogText } from "../BlogText";
+import { DefaultText } from "../DefaultText";
+import { useRouter } from "next/dist/client/router";
+import { routesDocument } from "../../routes";
 
 export function PostsBlog(props) {
   const content = props.content;

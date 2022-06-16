@@ -1,5 +1,5 @@
-import { Base, ItemsDiv, Div } from './styles';
-import { FirstContent } from '../../components/FirstContent';
+import { Base, ItemsDiv } from "./styles";
+import { FirstContent } from "../../components/FirstContent";
 
 export function FirstPage(props) {
   return (

@@ -1,8 +1,8 @@
-import { createGlobalStyle } from 'styled-components';
-import { Menu } from '../components/Menu';
-import { Provider as NextGitProvider } from 'next-auth/client';
+import { createGlobalStyle } from "styled-components";
+import { Menu } from "../components/Menu";
+import { Provider as NextGitProvider } from "next-auth/client";
 
-import '../styles/globals.css';
+import "../styles/globals.css";
 
 const GlobalStyle = createGlobalStyle`
   //Global Colors

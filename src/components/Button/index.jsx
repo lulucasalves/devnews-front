@@ -1,7 +1,7 @@
-import { Base } from './styles';
-import { useSession, signIn } from 'next-auth/client';
-import { useRouter } from 'next/dist/client/router';
-import { routesDocument } from '../../routes';
+import { Base } from "./styles";
+import { useSession, signIn } from "next-auth/client";
+import { useRouter } from "next/dist/client/router";
+import { routesDocument } from "../../routes";
 
 export function Button(props) {
   const router = useRouter();
@@ -12,7 +12,7 @@ export function Button(props) {
     if (session) {
       return router.push(routesDocument.checkout);
     } else {
-      signIn('github');
+      signIn("github");
       return;
     }
   }

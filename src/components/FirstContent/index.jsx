@@ -1,7 +1,7 @@
-import { Base, ItemsDiv, Div, Span } from './styles';
-import { BlogText } from '../BlogText';
-import { Button } from '../Button';
-import Image from 'next/image';
+import { Base, ItemsDiv, Div, Span } from "./styles";
+import { BlogText } from "../BlogText";
+import { Button } from "../Button";
+import Image from "next/image";
 
 export function FirstContent(props) {
   return (

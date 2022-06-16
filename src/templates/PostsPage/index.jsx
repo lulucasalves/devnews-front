@@ -1,5 +1,5 @@
-import { Base, ItemsDiv } from './styles';
-import { PostsBlog } from '../../components/PostsBlog';
+import { Base, ItemsDiv } from "./styles";
+import { PostsBlog } from "../../components/PostsBlog";
 
 export function PostsPage(props) {
   return (

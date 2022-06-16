@@ -1,5 +1,9 @@
-import { Base } from './styles'
+import { Base } from "./styles";
 
 export function Logo(props) {
-  return <Base {...props}>dev<span>.</span>news</Base>
+  return (
+    <Base {...props}>
+      dev<span>.</span>news
+    </Base>
+  );
 }
